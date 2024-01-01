@@ -1,0 +1,19 @@
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    url: jdbc:postgresql://localhost:5432/o11
+    username: postgres
+    password: secret_password
+  jpa:
+    properties.hibernate.jdbc.lob:
+      non_contextual_creation: true
+    hibernate:
+      ddl-auto=none: none
+
+
+
+logging:
+  level:
+    org:
+      springframework: INFO
